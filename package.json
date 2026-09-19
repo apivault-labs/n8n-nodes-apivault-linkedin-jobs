@@ -1,0 +1,50 @@
+{
+  "name": "n8n-nodes-apivault-linkedin-jobs",
+  "version": "0.2.1",
+  "description": "n8n community node for LinkedIn Jobs Scraper — backed by the Apify Actor apivault_labs/linkedin-jobs-scraper. No login. Pay-as-you-go via Apify.",
+  "license": "MIT",
+  "homepage": "https://apify.com/apivault_labs/linkedin-jobs-scraper",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "linkedin-jobs",
+    "apify",
+    "no-code",
+    "automation"
+  ],
+  "author": {
+    "name": "apivault_labs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apivault-labs/n8n-nodes-apivault-linkedin-jobs.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && copyfiles \"nodes/**/*.svg\" dist",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "examples"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/ApifyApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/LinkedinJobs/LinkedinJobs.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "copyfiles": "^2.4.1",
+    "n8n-workflow": "*",
+    "typescript": "^5.4.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
