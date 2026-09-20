@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-apivault-linkedin-jobs",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "n8n community node for LinkedIn Jobs Scraper — backed by the Apify Actor apivault_labs/linkedin-jobs-scraper. No login. Pay-as-you-go via Apify.",
   "license": "MIT",
   "homepage": "https://apify.com/apivault_labs/linkedin-jobs-scraper",

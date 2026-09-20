@@ -33,9 +33,9 @@
         "keywords": "software engineer",
         "location": "United States",
         "maxPages": 1,
-        "postedWithin": "week",
+        "postedWithin": "any",
         "deduplicateCompanies": true,
-        "minRecruiterScore": 25,
+        "minRecruiterScore": 0,
         "exportFormat": "default",
         "deepFetchAll": false
       },
